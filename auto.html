@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autowunder</title>
+    <style>
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: black;
+            background-color: #ededed;
+        }
+        header {
+            background-color: #a10000;
+            color: white;
+            padding-left: 125px;
+            padding-top: 3px;
+            padding-bottom: 3px;
+            text-align: left;
+            margin: 0;
+            font-size: 8px;
+        }
+        a {
+            color: white;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding-left: 108px;
+            display: flex;
+            justify-content: left;
+            background-color: #2e8b57;
+        }
+        nav ul li {
+            margin: 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .hero {
+            background: url('x5glecayenne.jpg') no-repeat center center/cover;
+            height: 350px;
+            color: black;
+            display: flex;
+            justify-content: left;
+            align-items: top;
+            text-align: left;
+            padding-left: 117px;
+            padding-top: 20px;
+        }
+        .special li {
+            text-shadow: 1px 1px 10px;
+        }
+        h1 {
+            color: white;
+        }
+        .section h2 {
+            font-size: 45px;
+            margin-bottom: 0;
+            text-shadow: 1px 1px 50px;
+        }
+        h3 {
+            font-size: 30px;
+            margin-top: 0;
+        }
+        .section {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .section h2 {
+            text-align: center;
+            margin-top: 35px;
+            margin-bottom: 20px;
+        }
+        .cars {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .car {
+            border: 0;
+            padding: 10px;
+            text-align: center;
+        }
+        .car img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .car a {
+            color: #2e8b57;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .services, .testimonials {
+            background-color: #ededed;
+        }
+        .services, .testimonials h2, p {
+            color: black;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .contact-form input, .contact-form textarea {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            width: 100%;
+        }
+        .contact-form button {
+            padding: 10px;
+            background-color: #2e8b57;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        footer {
+            text-align: center;
+            padding: 5px;
+            background-color: #333;
+            color: white;
+        }
+        .carousel-container {
+            position: relative;
+            width: 100%;
+            margin: 0;
+            overflow: hidden;
+        }
+        .carousel {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .carousel img {
+            width: 100%;
+            flex-shrink: 0;
+            max-height: 400px;
+        }
+        .carousel-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: transparent;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 10px 20px;
+            z-index: 1000;
+        }
+        .carousel-btn.prev {
+            left: 10px;
+        }
+        .carousel-btn.next {
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sparen Sie bis zu 6.500 € im Weihnachts-Sale | <a href="BF.html">Angebote ansehen</a></h1>
+    </header>
+    <nav>
+        <ul>
+            <li id="special"><b><i><a style="font-size: 25px;" href="auto.html">AUTOWUNDER</a></i></b></li>
+            <li><a href="#featured">Vorgestellte Autos</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#testimonials">Kundenstimmen</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+        </ul>
+    </nav>
+    <div class="carousel-container">
+        <div class="carousel">
+            <img src="bmw_x5.jpg" alt="BMW X5">
+            <img src="skoda_superb.jpg" alt="Skoda Superb">
+        </div>
+        <button class="carousel-btn prev">&lt;</button>
+        <button class="carousel-btn next">&gt;</button>
+    </div>
+    <section id="featured" class="section">
+        <h2>ENTDECKEN SIE DIE BESTEN ANGEBOTE</h2>
+        <div class="cars">
+            <div class="car">   
+                <img src="volvo_s90.jpg" alt="Car 1">
+                <h3>2024 Volvo S90</h3>
+                <a href="volvo_s90.html">Angebote ab 70.000 €</a>
+            </div>
+            <div class="car">
+                <img src="citroen_c5_aircross.jpg" alt="Car 2">
+                <h3>2024 Citroën C5 Aircross</h3>
+                <a href="citroen_c5_aircross.html">Angebote ab 32.000 €</a>
+            </div>
+            <div class="car">
+                <img src="audi_q7.jpg" alt="Car 3">
+                <h3>2023 Audi Q7</h3>
+                <a href="audi_q7.html">Angebote ab 67.000 €</a>
+            </div>
+        </div>
+    </section>
+    <section id="services" class="section services">
+        <h2>Unsere Zusatzleistungen</h2>
+        <p>Wir bieten auch Reparatur, finanzielle Unterstützung, und mehr.</p>
+    </section>
+    <section id="testimonials" class="section testimonials">
+        <h2>Kundenerfahrung</h2>
+        <p>"Ohne Autowunder hätte ich meinen traumhaften Skoda Kodiaq nicht gefunden!" - Liam Wagner</p>
+    </section>
+    <section id="contact" class="section">
+        <h2>Kontakt</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Ihr Name" required>
+            <input type="email" placeholder="Ihre E-Mail" required>
+            <textarea placeholder="Was möchten Sie sagen?" rows="5" required></textarea>
+            <button type="submit">Senden</button>
+        </form>
+    </section>
+    <footer>
+        <p>Copyright &copy; 2024 Autowunder</p>
+    </footer>
+
+    <script>
+        const carousel = document.querySelector('.carousel');
+        const images = document.querySelectorAll('.carousel img');
+        const prevBtn = document.querySelector('.carousel-btn.prev');
+        const nextBtn = document.querySelector('.carousel-btn.next');
+    
+        let index = 0;
+    
+        function updateCarousel() {
+            const offset = -index * images[0].clientWidth;
+            carousel.style.transform = `translateX(${offset}px)`;
+        }
+    
+        nextBtn.addEventListener('click', () => {
+            index = (index + 1) % images.length;
+            updateCarousel();
+        });
+    
+        prevBtn.addEventListener('click', () => {
+            index = (index - 1 + images.length) % images.length;
+            updateCarousel();
+        });
+    
+        window.addEventListener('resize', updateCarousel); // Ensure proper alignment on window resize
+    </script>
+
+</body>
+</html>
